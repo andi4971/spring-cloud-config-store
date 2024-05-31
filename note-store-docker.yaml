@@ -1,0 +1,14 @@
+note-store:
+    max-note-length: 10000
+server:
+  port: 8080
+spring:
+  datasource:
+    password: mySecret
+    url: jdbc:postgresql://postgres:5432/note
+    username: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false

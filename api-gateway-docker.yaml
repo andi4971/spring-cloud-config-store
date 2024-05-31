@@ -1,0 +1,3 @@
+api-gateway:
+  file-url: "http://file:8080"
+  note-url: "http://note:8080"
