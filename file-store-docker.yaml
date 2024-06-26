@@ -1,10 +1,6 @@
 file-store:
     max-file-size: 10000
+    open-api-url: 'http://api:8080/files'
+    download-path: 'downloads'
 server:
   port: 8080
-springdoc:
-  swagger-ui:
-    url: 'http://api-gateway:8080/files'
-file-store:
-  open-api-url: 'http://api-gateway:8080/files'
-  download-path: 'downloads'
