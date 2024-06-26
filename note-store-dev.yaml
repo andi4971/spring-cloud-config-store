@@ -1,2 +1,20 @@
 note-store:
     max-note-length: 10000
+spring:
+  datasource:
+    password: mySecret
+    url: jdbc:postgresql://localhost:5432/note
+    username: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  cloud:
+    openfeign:
+      client:
+        config:
+          FilesApiClient:
+            url: http://localhost:8081        
+server:
+  port: 8082
