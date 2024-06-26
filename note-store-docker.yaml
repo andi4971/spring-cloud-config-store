@@ -1,5 +1,6 @@
 note-store:
     max-note-length: 10000
+    open-api-url: http://api-gateway:8080/notes
 server:
   port: 8080
 spring:
@@ -12,3 +13,9 @@ spring:
     hibernate:
       ddl-auto: update
     open-in-view: false
+  cloud:
+   openfeign:
+     client:
+       config:
+         FilesApiClient:
+           url: http://file-store:8080
