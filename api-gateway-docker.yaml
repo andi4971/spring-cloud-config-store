@@ -1,15 +1,15 @@
 api-gateway:
   file-url: "http://file:8080"
   note-url: "http://note:8080"
- springdoc:
-  api-docs:
-    enabled: true
-  swagger-ui:
-    enabled: true
-    urls:
-      - url: 'http://localhost:8080/files/v3/api-docs'
-        display-name: 'file service'
-        name: 'file-service'
-      - url: 'http://localhost:8080/notes/v3/api-docs'
-        display-name: 'note service'
-        name: 'note-service'
+springdoc:
+ api-docs:
+   enabled: true
+ swagger-ui:
+   enabled: true
+   urls:
+     - url: 'http://localhost:8080/files/v3/api-docs'
+       display-name: 'file service'
+       name: 'file-service'
+     - url: 'http://localhost:8080/notes/v3/api-docs'
+       display-name: 'note service'
+       name: 'note-service'
