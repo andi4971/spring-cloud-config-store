@@ -14,7 +14,7 @@ spring:
     openfeign:
       client:
         config:
-          FilesApiClient:
-            url: http://localhost:8081        
+          files:
+            url: http://localhost:8080/files      
 server:
   port: 8082
